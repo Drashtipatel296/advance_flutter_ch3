@@ -51,3 +51,73 @@ if (connectivityResult.contains(ConnectivityResult.wifi)) {
 <a href="https://github.com/Drashtipatel296/advance_flutter_ch3/tree/master/lib/screens/connectivity_plus_package">-> Go To Code <-</a>
 </div>
 
+## 3.2 Chrome : flutter_inappwebview Package
+
+
+`flutter_inappwebview` is a Flutter package that allows you to embed WebView widgets into your Flutter application with ease. It provides a comprehensive set of features and functionalities, enabling you to control web content dynamically.
+
+## Installation
+
+Run `flutter pub get` to install the package.
+
+## Usage
+
+Here's a simple example demonstrating how to use `InAppWebView` and control it using its methods: `goBack`, `goForward`, `reload`, and `loadUrl`.
+
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Connectivity Network'),
+        ),
+        body:InAppWebView(
+        initialUrlRequest: URLRequest(url: Uri.parse("https://flutter.dev")),
+        onWebViewCreated: (controller) {
+          _webViewController = controller;
+        },
+      ),
+    );
+  }
+}
+```
+
+### Screenshots
+
+<div align="center">
+  <img src= "https://github.com/Drashtipatel296/advance_flutter_ch3/assets/143180636/1611f382-6092-4c0b-b1ed-9a9f4ae588fd" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src= "https://github.com/Drashtipatel296/advance_flutter_ch3/assets/143180636/d269093b-6b72-481c-a2ca-cf0dfa4b78d3" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+### Video 
+
+<div align="center">
+    <video src="https://github.com/Drashtipatel296/advance_flutter_ch3/assets/143180636/60be0a82-f605-46d5-bf02-c222b9c3130e" height=500px>
+</div>
+
+<div align="center">
+  <a href='https://github.com/Drashtipatel296/advance_flutter_ch3/tree/master/lib/screens/Chrome_flutter_inappwebview%20Package'>👉 📚 Go to dart file 📚 👈</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
